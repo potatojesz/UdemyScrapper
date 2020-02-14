@@ -17,7 +17,6 @@ public class Main {
             List<Course> courses = list.getCourses();
             for (Course course : courses) {
                 fileWriter.write(course.toString());
-                fileWriter.write(System.lineSeparator());
             }
             if(list.getNext() != null && list.getNext().length() > 0) {
                 getNextPages(api, list.getNext(), fileWriter);
@@ -31,7 +30,6 @@ public class Main {
         List<Course> courses = list.getCourses();
         for (Course course : courses) {
             fileWriter.write(course.toString());
-            fileWriter.write(System.lineSeparator());
         }
         if(list.getNext() != null && list.getNext().length() > 0) {
             getNextPages(api, list.getNext(), fileWriter);
